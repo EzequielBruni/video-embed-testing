@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Embedded Video Test</title>
+
+
+    <style>
+
+        /*! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,video{height:auto;max-width:100%}audio{max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
+
+        /* TYPEFACE IMPORTS */
+
+        @font-face {
+            font-family: OpenSans;
+            src: url(OpenSans-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: OpenSansBold;
+            src: url(OpenSans-ExtraBold.ttf);
+        }
+
+        /* BASIC TYPE STYLES */
+
+        /* .9rem(14.4px) @ 30rem(480px) increasing to 1.12rem(17.92px) @ 120rem(1920px) */
+        @media (min-width: 30rem) {
+            :root {
+            font-size: calc(.9rem + ((1vw - 0.3rem) * 0.2444));
+            /* Where: * 0.2444 = 100 * font_Size_Difference / viewport_Width_Difference */
+            }
+        }
+        /* Prevent font scaling beyond this breakpoint */
+        @media (min-width: 120rem) {
+            :root {
+            font-size: 1.12rem;
+            }
+        }
+
+        body {
+            font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+
+        h1 {
+            font-family: 'OpenSansBold', Arial, Helvetica, sans-serif;
+            font-size: 2.8125em;
+            line-height: 1.06666667em;
+            margin-top: 0.53333333em;
+            margin-bottom: 1.06666666em;
+        }
+        
+
+        /* A QUICK AND DIRTY LAYOUT PLEASE DON'T JUDGE ME */
+        
+        header nav, header p, header h1, footer p, .embed {
+            margin: 0 auto;
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        header {
+            margin: 3em 0 3em 0;
+        }
+
+        header nav {
+            border-bottom: 1px solid #c4c4c4;
+            margin-bottom: 1em;
+            padding: .5em;
+        }
+
+        .embed {
+            margin: 3em 0 3em 0;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav><a href="index.html">Go back</a></nav>
+        <p>Website Planet Presents:</p>
+        <h1>The super-advanced static video embedding test suite</h1>
+    </header>
+    <section>
+        <div class="embed">
+
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2019, if you're going to steal this... why? Anyway, all rights belong to Website Planet. <br>Authored by Ezequiel Bruni.</p>
+    </footer>
+</body>
+</html>
