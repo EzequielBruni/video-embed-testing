@@ -9,7 +9,7 @@
 
     <style>
 
-        /*! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,video{height:auto;max-width:100%}audio{max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
+        /*! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}audio{max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
 
         /* TYPEFACE IMPORTS */
 
@@ -58,27 +58,41 @@
 
         /* A QUICK AND DIRTY LAYOUT PLEASE DON'T JUDGE ME */
         
-        header nav, header p, header h1, footer p {
+        header, section, footer {
             margin: 0 auto;
             max-width: 1000px;
             text-align: center;
         }
 
         header {
-            margin: 3em 0 3em 0;
+            margin-top: 3em;
         }
 
-        header nav {
-            border-bottom: 1px solid #c4c4c4;
-            margin-bottom: 1em;
-            padding: .5em;
+        section nav {
+            background: #ddd;
+            margin: 3em auto 3em auto;
+            padding: 1em;
         }
 
-        section {
-            margin: 0 auto;
-            max-width: 1000px;
+        section nav ul li {
+            margin-top: 1em;
         }
-        
+
+        section nav ul li:first-child {
+            margin-top: 0;
+        }
+
+        section nav ul li a {
+            background: #FFF;
+            display: block;
+            font-size: 1.5em;
+            line-height: 2em;
+        }
+
+        footer p {
+            border-top: 1px solid #c4c4c4;
+            padding-top: 2em;
+        }
     
     </style>
 </head>
@@ -88,10 +102,15 @@
         <h1>The super-advanced static video embedding test suite</h1>
     </header>
     <section>
-        <p>Choose your platform:</p>
+
         <nav>
             <ul>
-
+                <li><a href="test-youtube.html">YouTube</a></li>
+                <li><a href="test-youtube.html">Vimeo</a></li>
+                <li><a href="test-youtube.html">Dailymotion</a></li>
+                <li><a href="test-youtube.html">Metacafe</a></li>
+                <li><a href="test-youtube.html">BitChute</a></li>
+                <li><a href="test-youtube.html">VidLii</a></li>
             </ul>
         </nav>
     </section>
